@@ -7,11 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import{MatButtonModule} from '@angular/material/button';
 import{MatIconModule} from '@angular/material/icon';
+import { TabComponent } from './tab/tab.component';
+import { TabForComponent } from './tab-for/tab-for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    TabComponent,
+    TabForComponent
   ],
   imports: [
     BrowserModule,

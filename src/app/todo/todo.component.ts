@@ -36,8 +36,6 @@ export class TodoComponent implements OnInit {
       todoId : Date.now().toString()
     }
     this.todoItem.nativeElement.value =''
-    
-
     //push arr
     this.todosArr.push(todoobj)
 

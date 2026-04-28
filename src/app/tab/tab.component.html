@@ -1,0 +1,51 @@
+
+<ul class="nav nav-pills">
+   <li class="nav-item"><a href="javascript:;"
+    [ngClass]="{
+        active : selectedSkill.toLowerCase().includes('html')
+    }"
+    class="nav-link" (click)="onTabChange('html')">HTML</a>
+</li>
+   <li class="nav-item"><a href="javascript:;"
+    [ngClass]="{
+        active : selectedSkill.toLowerCase().includes('css')
+    }"
+    class="nav-link" (click)="onTabChange('Css')">Css</a>
+</li>
+<li class="nav-item"><a href="javascript:;"
+    [ngClass]="{
+        active : selectedSkill.toLowerCase().includes('javascript')
+    }"
+    class="nav-link" (click)="onTabChange('javascript')">JavaScript</a>
+</li>
+   
+   <li class="nav-item"><a href="javascript:;" 
+    [ngClass]="{
+        active : selectedSkill.toLowerCase().includes('angular')
+    }"
+    class="nav-link" (click)="onTabChange('Angular')">Angular</a>
+</li>
+</ul>
+<hr>
+<div class="tab-content">
+    <div class="card" *ngIf="selectedSkill.toLowerCase().includes('html')">
+        <div class="card-body">
+            <strong>HTML</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem animi porro est repudiandae necessitatibus nam! Minus id commodi eveniet
+        </div>
+ </div>
+    <div class="card">
+        <div class="card-body" *ngIf="selectedSkill.toLowerCase().includes('css')">
+            <strong>Css</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi impedit quia, voluptatibus voluptates unde earum delectus exercitationem reiciendis
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" *ngIf="selectedSkill.toLowerCase().includes('javascript')">
+            <strong>JavaScript</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero ratione laudantium aut eius consectetur voluptatum repellendus 
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body" *ngIf="selectedSkill.toLowerCase().includes('angular')">
+            <strong>Angular</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis fuga eius iste reprehenderit totam consequatur fugiat ad aliquid quidem 
+        </div>
+    </div>
+</div> 
